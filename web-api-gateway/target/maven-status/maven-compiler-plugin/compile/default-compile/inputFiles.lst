@@ -1,0 +1,9 @@
+/Users/captain/Desktop/microservices/web-api-gateway/src/main/java/org/springframework/samples/petclinic/api/dto/PetType.java
+/Users/captain/Desktop/microservices/web-api-gateway/src/main/java/org/springframework/samples/petclinic/api/boundary/web/ApiGatewayController.java
+/Users/captain/Desktop/microservices/web-api-gateway/src/main/java/org/springframework/samples/petclinic/api/application/CustomersServiceClient.java
+/Users/captain/Desktop/microservices/web-api-gateway/src/main/java/org/springframework/samples/petclinic/api/dto/VisitDetails.java
+/Users/captain/Desktop/microservices/web-api-gateway/src/main/java/org/springframework/samples/petclinic/api/dto/PetDetails.java
+/Users/captain/Desktop/microservices/web-api-gateway/src/main/java/org/springframework/samples/petclinic/api/ApiGatewayApplication.java
+/Users/captain/Desktop/microservices/web-api-gateway/src/main/java/org/springframework/samples/petclinic/api/dto/Visits.java
+/Users/captain/Desktop/microservices/web-api-gateway/src/main/java/org/springframework/samples/petclinic/api/dto/OwnerDetails.java
+/Users/captain/Desktop/microservices/web-api-gateway/src/main/java/org/springframework/samples/petclinic/api/application/VisitsServiceClient.java

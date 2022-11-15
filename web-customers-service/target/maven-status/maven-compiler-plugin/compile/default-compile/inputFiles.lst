@@ -1,0 +1,11 @@
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/PetResource.java
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/PetDetails.java
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/OwnerResource.java
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/ResourceNotFoundException.java
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/model/PetType.java
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/CustomersServiceApplication.java
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/web/PetRequest.java
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/model/Pet.java
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/model/Owner.java
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/model/PetRepository.java
+/Users/captain/Desktop/microservices/web-customers-service/src/main/java/org/springframework/samples/petclinic/customers/model/OwnerRepository.java

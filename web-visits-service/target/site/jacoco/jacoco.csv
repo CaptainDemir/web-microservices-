@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+spring-web-visits-service,org.springframework.samples.petclinic.visits.web,VisitResource,18,20,0,0,4,4,2,3,2,3
+spring-web-visits-service,org.springframework.samples.petclinic.visits.web,VisitResource.Visits,56,9,12,0,0,2,9,2,3,2
+spring-web-visits-service,org.springframework.samples.petclinic.visits.model,Visit,10,35,0,0,3,6,2,7,2,7
+spring-web-visits-service,org.springframework.samples.petclinic.visits.model,Visit.VisitBuilder,23,32,1,1,0,1,4,4,3,4
+spring-web-visits-service,org.springframework.samples.petclinic.visits,VisitsServiceApplication,5,3,0,0,2,1,1,1,1,1

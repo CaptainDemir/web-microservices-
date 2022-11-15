@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+spring-web-vets-service,org.springframework.samples.petclinic.vets.model,Vet,14,48,0,2,6,13,3,9,3,8
+spring-web-vets-service,org.springframework.samples.petclinic.vets.model,Specialty,17,0,0,0,7,0,5,0,5,0
+spring-web-vets-service,org.springframework.samples.petclinic.vets.system,VetsProperties,47,28,13,1,0,2,10,4,3,4
+spring-web-vets-service,org.springframework.samples.petclinic.vets.system,CacheConfig,3,0,0,0,1,0,1,0,1,0
+spring-web-vets-service,org.springframework.samples.petclinic.vets.system,VetsProperties.Cache,44,37,10,0,0,3,8,6,3,6
+spring-web-vets-service,org.springframework.samples.petclinic.vets.web,VetResource,0,10,0,0,0,2,0,2,0,2
+spring-web-vets-service,org.springframework.samples.petclinic.vets,VetsServiceApplication,5,3,0,0,2,1,1,1,1,1
