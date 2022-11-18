@@ -2075,7 +2075,7 @@ git push
 
 ```bash
 APP_NAME="captain-demir"
-ANS_KEYPAIR="call-ansible-test-dev.key"
+ANS_KEYPAIR="demir-ansible-test-dev.key"
 PATH="$PATH:/usr/local/bin"
 export ANSIBLE_PRIVATE_KEY_FILE="${WORKSPACE}/${ANS_KEYPAIR}"
 export ANSIBLE_HOST_KEY_CHECKING=False
