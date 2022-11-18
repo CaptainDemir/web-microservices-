@@ -1,0 +1,28 @@
+- hosts: role_master
+  tasks:
+
+  - name: Create .docker folder
+    file:
+      path: /home/ubuntu/.docker
+      state: directory
+      mode: '0755'
+
+  - name: copy the docker config file
+    become: yes
+    copy: 
+      src: $JENKINS_HOME/.docker/config.json
+      dest: /home/ubuntu/.docker/config.json
+
+  - name: deploy captain-demir application
+    shell: |
+      helm plugin install https://github.com/hypnoglow/helm-s3.git
+      kubectl create ns captain-demir-dev
+      kubectl delete secret regcred -n captain-demir-dev || true
+      kubectl create secret generic regcred -n captain-demir-dev \
+        --from-file=.dockerconfigjson=/home/ubuntu/.docker/config.json \
+        --type=kubernetes.io/dockerconfigjson
+      AWS_REGION=$AWS_REGION helm repo add stable-captain-demir s3://captain-demir-helm-charts-web-microservices/stable/myapp/
+      AWS_REGION=$AWS_REGION helm repo update
+      AWS_REGION=$AWS_REGION helm upgrade --install \
+        captain-demir-app-release stable-captain-demir/captain-demir_chart --version ${BUILD_NUMBER} \
+        --namespace captain-demir-dev
