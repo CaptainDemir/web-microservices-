@@ -13,6 +13,7 @@ pipeline {
        //First part of projectID
         CLUSTERID="c-x7ksh"
         RANCHER_CREDS=credentials('rancher-captain-demir-credentials')
+        
     }
     stages {
         stage('Package Application') {
