@@ -3311,7 +3311,7 @@ git checkout feature/msp-23
 
 * Explain [Rancher Container Management Tool](https://rancher.com/docs/rancher/v2.x/en/overview/architecture/).
 
-* Create an IAM Policy with name of `call-rke-controlplane-policy.json` and also save it under `infrastructure` for `Control Plane` node to enable Rancher to create or remove EC2 resources.
+* Create an IAM Policy with name of `demir-rke-controlplane-policy.json` and also save it under `infrastructure` for `Control Plane` node to enable Rancher to create or remove EC2 resources.
 
 ``` json
 {
@@ -3456,7 +3456,7 @@ chmod +x /usr/local/bin/kubectl
 kubectl version --short --client
 ```  
   
-* Log into `Call-Rancher-Cluster-Instance` from Jenkins Server (Bastion host) and install Docker using the following script.
+* Log into `demir-Rancher-Cluster-Instance` from Jenkins Server (Bastion host) and install Docker using the following script.
 
 ```bash
 # Set hostname of instance
@@ -3565,7 +3565,7 @@ ingress:
     use-forwarded-headers: "true"
 ```
 
-* Run `rke` command to setup RKE Kubernetes cluster on EC2 Rancher instance *`Warning:` You should add rule to cluster sec group for Jenkins Server using its `IP/32` from SSH (22) and TCP(6443) before running `rke` command, because it is giving connection error.*
+* Run `rke` command to setup RKE Kubernetes cluster on EC2 Rancher instance *`Warning:` You should add rule to cluster sec group for Jenkins Server using its   
 
 ```bash
 rke up --config ./rancher-cluster.yml
@@ -3640,7 +3640,7 @@ kubectl -n cattle-system get pods
 
 ## MSP 25 - Create Staging and Production Environment with Rancher
 
-* To provide access of Rancher to the cloud resources, create a `Cloud Credentials` for AWS on Rancher and name it as `demir-AWS-Training-Account`.
+* To provide access of Rancher to the cloud resources, create a `Cloud Credentials` for AWS on Rancher and name it as `demir-AWS-webapp-Account`.
 
 * Create a `Node Template` on Rancher with following configuration for to be used while launching the EC2 instances and name it as `demir-AWS-RancherOs-Template`.
 
