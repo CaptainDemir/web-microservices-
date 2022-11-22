@@ -4020,7 +4020,7 @@ pipeline {
 }
 ```
 
-* Create an `A` record of `staging-captain-demir.captaindemir.com` in your hosted zone (in our case `captaindemir.com`) using AWS Route 53 domain registrar and bind it to your `captain-demir cluster`.
+* Create an `A` record of `staging-web-microservices.captaindemir.com` in your hosted zone (in our case `captaindemir.com`) using AWS Route 53 domain registrar and bind it to your `captain-demir cluster`.
 
 * Commit the change, then push the script to the remote repo.
 
@@ -4281,9 +4281,9 @@ git branch feature/msp-29
 git checkout feature/msp-29
 ```
 
-* Create an `A` record of `captain-demir.captaindemir.com` in your hosted zone (in our case `captaindemir.com`) using AWS Route 53 domain registrar and bind it to your `captain-demir cluster`.
+* Create an `A` record of `web-microservices.captaindemir.com` in your hosted zone (in our case `captaindemir.com`) using AWS Route 53 domain registrar and bind it to your `captain-demir cluster`.
 
-* Configure TLS(SSL) certificate for `captain-demir.captaindemir.com` using `cert-manager` on captain-demir K8s cluster with the following steps.
+* Configure TLS(SSL) certificate for `web-microservices.captaindemir.com` using `cert-manager` on captain-demir K8s cluster with the following steps.
 
 * Log into Jenkins Server and configure the `kubectl` to connect to captain-demir cluster by getting the `Kubeconfig` file from Rancher and save it as `$HOME/.kube/config` or set `KUBECONFIG` environment variable.
 
@@ -4379,11 +4379,11 @@ metadata:
 spec:
   tls:
   - hosts:
-    - captain-demir.captaindemir.com
+    - web-microservices.captaindemir.com
     secretName: captain-demir-tls
 ```
 
-* Check and verify that the TLS(SSL) certificate created and successfully issued to `captain-demir.captaindemir.com` by checking URL of `https://captain-demir.captaindemir.com`
+* Check and verify that the TLS(SSL) certificate created and successfully issued to `web-microservices.captaindemir.com` by checking URL of `https://web-microservices.captaindemir.com`
 
 * Commit the change, then push the tls script to the remote repo.
 
