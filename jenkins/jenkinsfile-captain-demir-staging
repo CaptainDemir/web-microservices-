@@ -8,9 +8,9 @@ pipeline {
         AWS_REGION="us-east-1"
         ECR_REGISTRY="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
         RANCHER_URL="https://rancher.captaindemir.com"
-        // Get the project-id from Rancher UI (captain-demir-cluster-staging namespace, View in API, copy projectId )
+
         RANCHER_CONTEXT="c-z94g8:p-26p9n" 
-       //First part of projectID
+ 
         CLUSTERID="c-z94g8"
         RANCHER_CREDS=credentials('rancher-captain-demir-credentials')
         
