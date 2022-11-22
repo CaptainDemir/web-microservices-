@@ -75,7 +75,7 @@ pipeline {
                 sh "rm -f k8s/config"
                 sh "rancher cluster kf $CLUSTERID > k8s/config"
                 sh "chmod 400 k8s/config"
-                sh "helm repo add stable-captain-demir s3://captain-demir-helm-charts/stable/myapp/"
+                sh "helm repo add stable-captain-demir s3://captain-demir-helm-charts-web-microservices/stable/myapp/"
                 sh "helm package k8s/captain-demir_chart"
                 sh "helm s3 push --force captain-demir_chart-${BUILD_NUMBER}.tgz stable-captain-demir"
                 sh "helm repo update"
