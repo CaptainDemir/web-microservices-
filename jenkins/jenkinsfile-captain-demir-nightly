@@ -33,7 +33,8 @@ pipeline {
                 echo 'Packaging the app into jars with maven'
                 sh "mvn clean package"
                 
-                
+                 }
+        }   
                 
         stage('Prepare Tags for Docker Images') {
             steps {
